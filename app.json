@@ -1,0 +1,16 @@
+{
+  "name": "azmisahin vujs",
+  "description": "Heroku Release Pipeline",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
