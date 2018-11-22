@@ -1,0 +1,34 @@
+{
+  "name": "azmisahin-software-web-architecture-vujs",
+  "description": "Website with The Progressive JavaScript Framework",
+  "keywords": [
+    "Azmi",
+    "ŞAHİN",
+    "nodejs",
+    "vuejs",
+    "javascript",
+    "website",
+    "CI",
+    "CD",
+    "heroku",
+    "azure"
+  ],
+  "author": "bilgi@azmisahin.com",
+  "license": "MIT",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "https://github.com/azmisahin/azmisahin-software-web-architecture-vujs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azmisahin/azmisahin-software-web-architecture-vujs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/azmisahin/azmisahin-software-web-architecture-vujs/issues"
+  },
+  "scripts": {
+    "start": "echo \"Start Not Ready\" && exit 0",
+    "build": "echo \"Build Not Ready\" && exit 0",
+    "test": "echo \"Test Not Ready\" && exit 0",
+    "eject": "echo \"Eject Not Ready\" && exit 0"
+  }
+}
