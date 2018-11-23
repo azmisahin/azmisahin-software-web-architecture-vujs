@@ -27,8 +27,26 @@
   },
   "scripts": {
     "start": "echo \"Start Not Ready\" && exit 0",
-    "build": "echo \"Build Not Ready\" && exit 0",
+    "build": "vue-cli-service build",
     "test": "echo \"Test Not Ready\" && exit 0",
-    "eject": "echo \"Eject Not Ready\" && exit 0"
-  }
+    "eject": "echo \"Eject Not Ready\" && exit 0",
+    "serve": "vue-cli-service serve"
+  },
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^3.1.4",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }
