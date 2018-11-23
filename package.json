@@ -26,7 +26,7 @@
     "url": "https://github.com/azmisahin/azmisahin-software-web-architecture-vujs/issues"
   },
   "scripts": {
-    "start": "echo \"Start Not Ready\" && exit 0",
+    "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test": "echo \"Test Not Ready\" && exit 0",
     "eject": "echo \"Eject Not Ready\" && exit 0",
