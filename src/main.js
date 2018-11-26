@@ -24,24 +24,76 @@ window.Vue = Vue
 
 /**
  * Vue Web Application
+ *
+ * @example
+ * // ref : https://vuejs.org/v2/api/#vm-mount
+ * Web.$mount("#app")
  */
 const Web = new Vue({
-	// ref: https://vuejs.org/v2/guide/render-function.html
+	/**
+	 * ref: https://vuejs.org/v2/guide/render-function.html
+	 *
+	 * Error: ie [ 10 ]
+	 * x SCRIPT1002: Syntax error
+	 * x SCRIPT5022: SecurityError
+	 *
+	 * Error: ie [ 9 ]
+	 * x SCRIPT1002: Syntax error
+	 *
+	 * Error: ie [ 8 ]
+	 * x SCRIPT445: Object doesn't support this action
+	 *
+	 * Error: ie [ 7 - 5 ]
+	 * x SCRIPT438: Object doesn't support property or method 'defineProperty'
+	 *
+	 * @param {*} h
+	 */
+	render: function (h) { return h(App) }
 
-	// Ecma5
-	// render: function (h) { return h(App) },
-
-	// Ecma6
+	/**
+	 * ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+	 *
+	 * Error: ie [ 10 - 11 ]
+	 * x SCRIPT1028: Expected identifier, string or number
+	 * x SCRIPT5022: SecurityError
+	 *
+	 * Error: ie [ 9 ]
+	 * x SCRIPT1002: Syntax error
+	 *
+	 * Error: ie [ 8 ]
+	 * x SCRIPT445: Object doesn't support this action
+	 *
+	 * Error: ie [ 7 - 5 ]
+	 * x SCRIPT438: Object doesn't support property or method 'defineProperty'
+	 *
+	 * @param {*} h
+	 *
+	 *  */
 	// render: h => h(App)
 
-	// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
-	...App
+	/**
+	 * ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+	 *
+	 * Error: ie [ 10 - 11 ]
+	 * x SCRIPT1028: Expected identifier, string or number
+	 * x SCRIPT5022: SecurityError
+	 *
+	 * Error: ie [ 9 ]
+	 * x SCRIPT1002: Syntax error
+	 *
+	 * Error: ie [ 8 ]
+	 * x SCRIPT445: Object doesn't support this action
+	 *
+	 * Error: ie [ 7 - 5 ]
+	 * x SCRIPT438: Object doesn't support property or method 'defineProperty'
+	 *
+	 */
+	//...App
 });
 
-//ref : https://vuejs.org/v2/api/#vm-mount
+// ref : https://vuejs.org/v2/api/#vm-mount
 Web.$mount("#app")
 
  // Node cofiguration
  import Package from '../package.json'
- console.clear()
  console.log("Application Version: " + Package.version);
