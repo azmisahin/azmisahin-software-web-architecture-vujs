@@ -33,11 +33,11 @@ const Web = new Vue({
 	/**
 	 * ref: https://vuejs.org/v2/guide/render-function.html
 	 *
-	 * Error: ie [ 10 ]
+	 * Error: ie [ 10 ] -> No problem with "babel"
 	 * x SCRIPT1002: Syntax error
 	 * x SCRIPT5022: SecurityError
 	 *
-	 * Error: ie [ 9 ]
+	 * Error: ie [ 9 ] -> No problem with "babel"
 	 * x SCRIPT1002: Syntax error
 	 *
 	 * Error: ie [ 8 ]
@@ -48,16 +48,16 @@ const Web = new Vue({
 	 *
 	 * @param {*} h
 	 */
-	render: function (h) { return h(App) }
+	// render: function (h) { return h(App) }
 
 	/**
 	 * ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 	 *
-	 * Error: ie [ 10 - 11 ]
+	 * Error: ie [ 10 - 11 ] -> No problem with "babel"
 	 * x SCRIPT1028: Expected identifier, string or number
 	 * x SCRIPT5022: SecurityError
 	 *
-	 * Error: ie [ 9 ]
+	 * Error: ie [ 9 ] -> No problem with "babel"
 	 * x SCRIPT1002: Syntax error
 	 *
 	 * Error: ie [ 8 ]
@@ -74,11 +74,11 @@ const Web = new Vue({
 	/**
 	 * ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 	 *
-	 * Error: ie [ 10 - 11 ]
+	 * Error: ie [ 10 - 11 ] -> No problem with "babel"
 	 * x SCRIPT1028: Expected identifier, string or number
 	 * x SCRIPT5022: SecurityError
 	 *
-	 * Error: ie [ 9 ]
+	 * Error: ie [ 9 ] -> No problem with "babel"
 	 * x SCRIPT1002: Syntax error
 	 *
 	 * Error: ie [ 8 ]
@@ -88,7 +88,7 @@ const Web = new Vue({
 	 * x SCRIPT438: Object doesn't support property or method 'defineProperty'
 	 *
 	 */
-	//...App
+	...App
 });
 
 // ref : https://vuejs.org/v2/api/#vm-mount
