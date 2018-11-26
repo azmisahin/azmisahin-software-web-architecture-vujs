@@ -16,12 +16,6 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-// ref: https://vuejs.org/v2/api/#Global-Config
-Vue.config.productionTip = false
-
-// For client addons
-window.Vue = Vue
-
 /**
  * Vue Web Application
  *
