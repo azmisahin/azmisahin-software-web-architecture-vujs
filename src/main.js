@@ -12,7 +12,7 @@
  * ████████████████████████████████████████████████████████████████████████████████████████████████████
  **/
 
- // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
 import Vue from 'vue'
 import App from './App.vue'
 
@@ -24,70 +24,62 @@ import App from './App.vue'
  * Web.$mount("#app")
  */
 const Web = new Vue({
-	/**
-	 * ref: https://vuejs.org/v2/guide/render-function.html
-	 *
-	 * Error: ie [ 10 ] -> No problem with "babel"
-	 * x SCRIPT1002: Syntax error
-	 * x SCRIPT5022: SecurityError
-	 *
-	 * Error: ie [ 9 ] -> No problem with "babel"
-	 * x SCRIPT1002: Syntax error
-	 *
-	 * Error: ie [ 8 ]
-	 * x SCRIPT445: Object doesn't support this action
-	 *
-	 * Error: ie [ 7 - 5 ]
-	 * x SCRIPT438: Object doesn't support property or method 'defineProperty'
-	 *
-	 * @param {*} h
-	 */
-	// render: function (h) { return h(App) }
+  /**
+   * ref: https://vuejs.org/v2/guide/render-function.html
+   *
+   * Error: ie [ 10 ] -> No problem with "babel"
+   * x SCRIPT1002: Syntax error
+   * x SCRIPT5022: SecurityError
+   *
+   * Error: ie [ 9 ] -> No problem with "babel"
+   * x SCRIPT1002: Syntax error
+   *
+   * Error: ie [ 8 ]
+   * x SCRIPT445: Object doesn't support this action
+   *
+   * Error: ie [ 7 - 5 ]
+   * x SCRIPT438: Object doesn't support property or method 'defineProperty'
+   * @param {*} h
+   * /
+  // render: function (h) { return h(App) }
 
-	/**
-	 * ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
-	 *
-	 * Error: ie [ 10 - 11 ] -> No problem with "babel"
-	 * x SCRIPT1028: Expected identifier, string or number
-	 * x SCRIPT5022: SecurityError
-	 *
-	 * Error: ie [ 9 ] -> No problem with "babel"
-	 * x SCRIPT1002: Syntax error
-	 *
-	 * Error: ie [ 8 ]
-	 * x SCRIPT445: Object doesn't support this action
-	 *
-	 * Error: ie [ 7 - 5 ]
-	 * x SCRIPT438: Object doesn't support property or method 'defineProperty'
-	 *
-	 * @param {*} h
-	 *
-	 *  */
-	// render: h => h(App)
+  /**
+   * ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+   *
+   * Error: ie [ 10 - 11 ] -> No problem with "babel"
+   * x SCRIPT1028: Expected identifier, string or number
+   * x SCRIPT5022: SecurityError
+   *
+   * Error: ie [ 9 ] -> No problem with "babel"
+   * x SCRIPT1002: Syntax error
+   *
+   * Error: ie [ 8 ]
+   * x SCRIPT445: Object doesn't support this action
+   *
+   * Error: ie [ 7 - 5 ]
+   * x SCRIPT438: Object doesn't support property or method 'defineProperty'
+   * @param {*} h
+   * */
+  // render: h => h(App)
 
-	/**
-	 * ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
-	 *
-	 * Error: ie [ 10 - 11 ] -> No problem with "babel"
-	 * x SCRIPT1028: Expected identifier, string or number
-	 * x SCRIPT5022: SecurityError
-	 *
-	 * Error: ie [ 9 ] -> No problem with "babel"
-	 * x SCRIPT1002: Syntax error
-	 *
-	 * Error: ie [ 8 ]
-	 * x SCRIPT445: Object doesn't support this action
-	 *
-	 * Error: ie [ 7 - 5 ]
-	 * x SCRIPT438: Object doesn't support property or method 'defineProperty'
-	 *
-	 */
-	...App
-});
+  /**
+    * ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+    *
+    * Error: ie [ 10 - 11 ] -> No problem with "babel"
+    * x SCRIPT1028: Expected identifier, string or number
+    * x SCRIPT5022: SecurityError
+    *
+    * Error: ie [ 9 ] -> No problem with "babel"
+    * x SCRIPT1002: Syntax error
+    *
+    * Error: ie [ 8 ]
+    * x SCRIPT445: Object doesn't support this action
+    *
+    * Error: ie [ 7 - 5 ]
+    * x SCRIPT438: Object doesn't support property or method 'defineProperty'
+    * */
+  ...App
+})
 
 // ref : https://vuejs.org/v2/api/#vm-mount
-Web.$mount("#app")
-
- // Node cofiguration
- import Package from '../package.json'
- console.log("Application Version: " + Package.version);
+Web.$mount('#app')
