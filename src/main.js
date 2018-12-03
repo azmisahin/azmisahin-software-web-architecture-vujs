@@ -82,4 +82,4 @@ const Web = new Vue({
 })
 
 // ref : https://vuejs.org/v2/api/#vm-mount
-Web.$mount('#app')
+export default Web.$mount('#app')

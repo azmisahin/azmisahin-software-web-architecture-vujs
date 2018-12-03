@@ -11,6 +11,9 @@ export default {
   props: {
     title: String,
     message: String
+  },
+  data () {
+    return {}
   }
 }
 </script>
