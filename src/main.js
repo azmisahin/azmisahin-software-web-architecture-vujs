@@ -78,8 +78,16 @@ const Web = new Vue({
     * Error: ie [ 7 - 5 ]
     * x SCRIPT438: Object doesn't support property or method 'defineProperty'
     * */
-  ...App
+  ...App,
+
+  /**
+   * Options / DOM
+   * Provide the Vue instance an existing DOM element to mount on.
+   * ref: https://vuejs.org/v2/api/#el
+   */
+  el: '#app'
 })
 
 // ref : https://vuejs.org/v2/api/#vm-mount
-export default Web.$mount('#app')
+// export default Web.$mount('#app')
+export default Web

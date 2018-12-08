@@ -1,27 +1,26 @@
 <template>
   <div id="app">
-    <Welcome title="Welcome" message="The Progressive JavaScript Framework"/>
+    <Home />
   </div>
 </template>
 
 <script>
-import Welcome from './components/welcome.vue'
+import Home from '@/views/home'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    Welcome
+    Home
   }
 }
 </script>
 
-  <style>
-  #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-    }
-    </style>
+<style lang="scss">
+@import "./src/styles/variable.scss";
+
+// Application
+#app{
+  font-family     : $font;
+  color           : $primary-color;
+}
+</style>
