@@ -15,6 +15,7 @@
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
 import Vue from 'vue'
 import App from './App.vue'
+import router from './router'
 
 /**
  * Vue Web Application
@@ -85,7 +86,12 @@ const Web = new Vue({
    * Provide the Vue instance an existing DOM element to mount on.
    * ref: https://vuejs.org/v2/api/#el
    */
-  el: '#app'
+  el: '#app',
+
+  /**
+   * ref: https://router.vuejs.org/
+   */
+  router
 })
 
 // ref : https://vuejs.org/v2/api/#vm-mount
