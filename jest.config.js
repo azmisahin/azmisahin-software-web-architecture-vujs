@@ -24,5 +24,7 @@ module.exports = {
   coveragePathIgnorePatterns: ['/node_modules/', 'main.js'],
   collectCoverageFrom: [
     '**/src/**/*.{js,vue}'
-  ]
+  ],
+  // ref: https://jestjs.io/docs/en/configuration.html#setupfiles-array
+  setupFiles: ['<rootDir>/tests/unit/setup']
 }
