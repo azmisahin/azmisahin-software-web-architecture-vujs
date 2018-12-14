@@ -19,3 +19,35 @@ Vue (pronounced /vjuː/, like view) is a progressive framework for building user
 
 ## Live
 [Live Application](https://azmisahin-software-web-architecture-vujs.azurewebsites.net/)
+
+## Developer Road Map
+
+### Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Run your end-to-end tests
+```
+npm run test:e2e
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
